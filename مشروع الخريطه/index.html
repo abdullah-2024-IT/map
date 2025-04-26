@@ -510,19 +510,19 @@ window.addEventListener('load', function() {
 <!-- ✅ الشريط الجانبي الرئيسي -->
 <div class="sidebar" style="position: fixed; top: 60px; left: 0; width: 80px; height: calc(100vh - 60px); background-color: black; color: white; border-right: 1px solid #333; z-index: 1000; display: flex; flex-direction: column; align-items: center; padding-top: 10px;">
     <div class="icon" onclick="toggleSubSidebar('explore')" style="margin-bottom: 20px; text-align: center;">
-        <img src="/images/explore-icon.png" alt="استكشاف" style="width: 40px;">
+        <img src="./images/explore-icon.png" alt="استكشاف" style="width: 40px;">
         <span data-key="explore" style="display: block; font-size: 12px;">استكشاف</span>
     </div>
     <div class="icon" onclick="toggleSubSidebar('places')" style="margin-bottom: 20px; text-align: center;">
-        <img src="/images/location-icon.png" alt="أماكني" style="width: 40px;">
+        <img src="./images/location-icon.png" alt="أماكني" style="width: 40px;">
         <span data-key="places" style="display: block; font-size: 12px;">أماكني</span>
     </div>
     <div class="icon" onclick="toggleSubSidebar('directions')" style="margin-bottom: 20px; text-align: center;">
-        <img src="/images/directions-icon.png" alt="الاتجاهات" style="width: 40px;">
+        <img src="./images/directions-icon.png" alt="الاتجاهات" style="width: 40px;">
         <span data-key="directions" style="display: block; font-size: 12px;">الاتجاهات</span>
     </div>
     <div class="icon" onclick="toggleSubSidebar('events')" style="margin-bottom: 20px; text-align: center;">
-        <img src="/images/events-icon.png" alt="الأحداث" style="width: 40px;">
+        <img src="./images/events-icon.png" alt="الأحداث" style="width: 40px;">
         <span data-key="events" style="display: block; font-size: 12px;">الأحداث</span>
     </div>
     <div class="icon alert-icon" onclick="showMessage()" style="margin-top: auto; margin-bottom: 10px; text-align: center;">
@@ -535,12 +535,12 @@ window.addEventListener('load', function() {
 <div id="explore" class="sub-sidebar" style="position: fixed; top: 60px; left: 80px; width: 250px; height: calc(100vh - 60px); background-color: white; color: black; border-right: 1px solid #ddd; overflow-y: auto; display: none; padding: 10px;">
     <h3 data-key="explore" style="color: black;">استكشاف</h3>
     <ul class="category-list" style="list-style: none; padding: 0;">
-        <li onclick="showCategory('college')"><img src="/images/33.png" style="width: 20px;"> <span data-key="college">الكليات</span></li>
-        <li onclick="showCategory('admin')"><img src="/images/77.png" style="width: 20px;"> <span data-key="admin">الإدارة</span></li>
-        <li onclick="showCategory('medical')"><img src="/images/44.png" style="width: 20px;"> <span data-key="medical">الإدارة الطبية</span></li>
-        <li onclick="showCategory('library')"><img src="/images/55.png" style="width: 20px;"> <span data-key="library">المكتبة</span></li>
-        <li onclick="showCategory('mosque')"><img src="/images/11.png" style="width: 20px;"> <span data-key="mosque">المساجد</span></li>
-        <li onclick="showCategory('restaurant')"><img src="/images/22.png" style="width: 20px;"> <span data-key="restaurant">المطاعم</span></li>
+        <li onclick="showCategory('college')"><img src="./images/33.png" style="width: 20px;"> <span data-key="college">الكليات</span></li>
+        <li onclick="showCategory('admin')"><img src="./images/77.png" style="width: 20px;"> <span data-key="admin">الإدارة</span></li>
+        <li onclick="showCategory('medical')"><img src="./images/44.png" style="width: 20px;"> <span data-key="medical">الإدارة الطبية</span></li>
+        <li onclick="showCategory('library')"><img src="./images/55.png" style="width: 20px;"> <span data-key="library">المكتبة</span></li>
+        <li onclick="showCategory('mosque')"><img src="./images/11.png" style="width: 20px;"> <span data-key="mosque">المساجد</span></li>
+        <li onclick="showCategory('restaurant')"><img src="/.images/22.png" style="width: 20px;"> <span data-key="restaurant">المطاعم</span></li>
     </ul>
 </div>
 
@@ -642,7 +642,8 @@ window.addEventListener('load', function() {
     </script>
     
 
-<script src="/buildings-data.js"></script> <!-- تأكد من تحميل ملف المباني هنا -->
+<script src="./buildings-data.js"></script>
+ <!-- تأكد من تحميل ملف المباني هنا -->
 <script>
     function showCategory(category) {
         if (!buildingLayers || buildingLayers.length === 0) {
